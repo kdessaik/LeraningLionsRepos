@@ -1,22 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import Home from './Components/Home';
 import reportWebVitals from './reportWebVitals';
-import {createBrowserRouter,RouterProvider,Link} from 'react-router-dom'
-import NotFoundPage from './Components/NotFoundPage';
+import App from './App';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import './style/css/style.css'
 
-const router=createBrowserRouter([
-  {
-    path:'/',
-    element:<Home/>,
-    errorElement:<NotFoundPage/>
-  }
-]);
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <RouterProvider router={router}/>
+   <App/>
     
   </React.StrictMode>
 );

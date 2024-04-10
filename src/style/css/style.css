@@ -1,3 +1,7 @@
+*{
+  font-size: 18px;
+  font-family: Roboto,sans-serif;
+}
 .App {
   text-align: center;
 }

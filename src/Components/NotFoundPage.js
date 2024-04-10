@@ -1,7 +1,7 @@
 
 
 import { Link } from 'react-router-dom';
-import './style.css';
+import '../style/css/style.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 

@@ -1,28 +1,27 @@
-import logo from './logo.svg';
-import './App.css';
-import Button from 'react-bootstrap/Button'
-import 'bootstrap/dist/css/bootstrap.min.css';
 
+import './style/css/App.css';
+import Button from 'react-bootstrap/Button'
+
+import MenuBar from './Components/MenuBar';
+import {createBrowserRouter,RouterProvider} from 'react-router-dom'
+import NotFoundPage from './Components/NotFoundPage';
+import Home from './Components/Home'
+
+const router=createBrowserRouter([
+  {
+    path:'/',
+    element:<Home/>,
+    errorElement:<NotFoundPage/>
+  }
+]);
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to Dessai.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-        <Button>This </Button>
-      </header>
-    </div>
+    <>  
+     <MenuBar/>
+    <RouterProvider router={router}/>
+    </>
+
   );
 }
 
