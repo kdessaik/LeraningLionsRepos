@@ -35,3 +35,80 @@ font-size: 15px;
 .navbar{
     border-bottom: 5px solid rgb(110,170,126);
 }
+
+
+#navbar{
+    display: none;
+}
+
+#navlinkdislay{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    left: 55%;
+    top: 120%;
+    background-color: white;
+}
+
+.nav-link{
+    color: black;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and  (min-width: 10px) and (max-width: 900px){
+    .navbar-brand>img{
+        max-width: 170px;
+    }  
+    .container{
+        right: 2%; 
+    
+    }
+    .bg-light{
+        width: 100%;
+    }
+    #navbar{
+        display: inline;
+    }
+        
+    #navlink{
+        display: none;
+        flex-direction: column;
+        position:absolute;
+        left: 15%;
+        top: 120%;
+        background-color: white;
+       
+        
+
+    
+    }
+    #navbar>div>img{
+        width:40%;
+        
+    }
+    #navbar>div{
+        margin-left: 40%;
+    }
+    #nav1{
+        display: none;
+    }
+    #imageMenu2{
+        display: none;
+        flex-direction: column;
+        position:absolute;
+        left: 15%;
+        top: 120%;
+        background-color: white;   
+    }
+    
+}
