@@ -1,7 +1,10 @@
 import React from 'react'
 import MenuBar  from './MenuBar'
 import {Outlet} from 'react-router-dom'
-import '../style/css/MenuBar.css'
+import Footer from './Footer'
+
+
+
 
 export default function RootComponents() {
   return (
@@ -11,6 +14,7 @@ export default function RootComponents() {
             <Outlet/>
 
         </main>
+      <Footer/>
       
     </div>
   )

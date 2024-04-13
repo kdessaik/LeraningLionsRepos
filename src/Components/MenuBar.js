@@ -14,16 +14,26 @@ import { NavLink } from 'react-router-dom';
 
 
 export default function MenuBar() {
-  
+ 
+
 const [idIconUpdate,setIdIconUpdate]=useState('navlink')
 
-
+ 
 
  const showNavbar=()=>{
+
   if(idIconUpdate=='navlink'){
     setIdIconUpdate('navlinkdislay')
+   const imageIcon= document.getElementById('imageMenu')
+   imageIcon.src=`${logoMenuX}`
+  
+
   }
-  else{setIdIconUpdate('navlink')} 
+  else{
+    setIdIconUpdate('navlink')
+    const imageIcon= document.getElementById('imageMenu')
+   imageIcon.src=`${iconNavbar}`
+    } 
  }
 
  
@@ -33,38 +43,27 @@ const [idIconUpdate,setIdIconUpdate]=useState('navlink')
     <>
       <Navbar bg="light" data-bs-theme="light" className='navbar'>
         <Container>
-          <Navbar.Brand href="#home" className='navbar-brand' >
+         
             
-            <NavLink className='navbar-brand' to='/'><img  src={logo} />  </NavLink></Navbar.Brand>
+            <NavLink className='navbar-brand' to='/'><img  src={logo} />  </NavLink>
           
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className='Navbar-icon'  id="navbar">
-              <div >  <img onClick={showNavbar} id='imageMenu'  src={iconNavbar}/>
+              <div >  <img onClick={showNavbar} id="imageMenu"
+              src={iconNavbar}/>
                      
               </div>
             
-              <Nav className="font-weight-bold me-auto"  id="navlink" >
-            <Nav.Link href="#home" ><NavLink to='/about'> ABOUT</NavLink></Nav.Link>
-            <Nav.Link href="#features">DONATE</Nav.Link>
-            <Nav.Link href="#pricing">WORK WITH LIONS</Nav.Link>
-            <Nav.Link href="#pricing">VOLUNTEER</Nav.Link>
-            <Nav.Link href="#pricing">BECOME A LION</Nav.Link>
-            <Nav.Link href="#pricing">CONTACT US</Nav.Link>
-           
-
-
-
-          </Nav>
-
+             
             </Nav>
 
           <Nav className="font-weight-bold me-auto" id={idIconUpdate}>
-            <Nav.Link href="#home" ><NavLink className="nav-link" to='/about'>ABOUT</NavLink> </Nav.Link>
-            <Nav.Link href="#features"><NavLink to='/donate' className="nav-link" > DONATE</NavLink></Nav.Link>
-            <Nav.Link href="#pricing">WORK WITH LIONS</Nav.Link>
-            <Nav.Link href="#pricing">VOLUNTEER</Nav.Link>
-            <Nav.Link href="#pricing">BECOME A LION</Nav.Link>
-            <Nav.Link href="#pricing">CONTACT US</Nav.Link>
+            <NavLink className="nav-link" to='/about'>ABOUT</NavLink> 
+            <NavLink to='/donate' className="nav-link" > DONATE</NavLink>
+            <NavLink className="nav-link"  to='/donate'>WORK WITH LIONS</NavLink>
+            <NavLink className="nav-link"  to='/donate'>VOLUNTEER</NavLink>
+            <NavLink className="nav-link"  to='/donate'>BECOME A LION</NavLink>
+            <NavLink className="nav-link"  to='/donate'>CONTACT US</NavLink>
            
 
 
