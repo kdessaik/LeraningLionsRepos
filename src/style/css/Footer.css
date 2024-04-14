@@ -1,13 +1,33 @@
 .footer{
+    margin-top: 10%;
     background-color: #4f4e55;
     font-family:  "Roboto", Roboto, Sans-serif;
     font-size: 14px;
-    padding: 20% 7%;
+    padding: 1% 7%;
     padding-bottom: 5%;
     color:white
 }
+.footerEmail{
+    background-color: #6DAA7D;
+    text-align: center;
+    padding: 1% ;
+    padding-top: 10%;
+    padding-bottom: 10%;
+    position: relative;
+    bottom: 150px;
+    width: 50%;
+    height: 80%;
+    margin-left: 25%;
+    
+
+
+}
+.footerEmail>form>h2{
+    padding: 2%;
+}
 .contactFooter>h5{
     font-size: 30px;
+
    
 }
 .container{
@@ -23,10 +43,57 @@
    
    
     line-height: 35px;
-    margin-right: 15%;
+    margin-right: 10%;
     
+}
+.contactFooter>h5{
+    text-align: center;
+    
+    width: 100%;
 }
 .contactFooter>address{
     width: 150%;
 }
+.socialMedia{
+    margin-left: 25%;
+    width: 50%;
+}
+.iconSameSize{
+    padding: 2% 0%;
+}
 
+.bi-socialMedia>a>img{
+width: 20%;  
+}
+.bi-socialMedia>a{
+    padding: 2%;
+}
+
+.bi-socialMedia>a:hover{
+    transition: 1s;
+    background-color: #6DAA7D;
+   
+    border-radius: 70px;
+}
+.bi-socialMedia>a>.iconSameSize{
+    width: 10%;
+}
+.Policy>a{
+text-decoration: none;
+color: white;
+}
+.Policy>.text-white1:hover{
+     transition: 1s;
+    text-decoration: none;
+    color: #6DAA7D;
+    
+    }
+.footerDescription{
+    text-align: center;
+    margin-top: 50px;
+}
+.footerDescription>span>a{
+    
+    text-decoration: none;
+    color: white;
+}
