@@ -1,0 +1,19 @@
+.aboutSection{
+    width: 100%;
+}
+.bckImgAbout{
+    margin-top: 4.7%;
+  width: 100%;
+ 
+  margin-left: -1%;
+  transform: scale(1.3)
+
+}
+
+.backgroundAbout>h2{
+   position: absolute;
+   top:50%;
+   margin-left: 40%;
+   font-family: "Blog-Script", Roboto, Sans-serif;
+
+}

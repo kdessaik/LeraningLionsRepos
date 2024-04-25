@@ -15,23 +15,17 @@ export default function Footer() {
   return (
     
 <>
-<footer className='footer' >
-  <section className='footerEmail'>
+<footer className=' footer' >
+  <section className='footerEmail' required >
     <form> <h6>SUBSCRIBE TO OUR NEWSLETTER</h6>
-    <input placeholder='Your@email.com'/>
-    <button>SUBSCRIBE</button>
+    <input placeholder='your@email.com' className='inputEmail'/><br></br>
+    <button className='btn btn-primary' id='btn-subscrib'>SUBSCRIBE</button>
     </form>
    
 
   </section>
   
-  <div className="container ">
-
-    
-    
-
-
-     
+  <div className="container containerOne" >
     <section className="contactFooter">
         <h5 >CONTACT US</h5>
         <a>info@learninglions.org</a>
@@ -81,7 +75,7 @@ export default function Footer() {
         <div className="col-lg-3 col-md-6 mb-4 mb-md-0">
          <br/>
 
-          <ul className="list-unstyled mb-0">
+          <ul className="list-unstyled  mb-0">
             <li className='Policy'>
               <a href="#!" className="text-white1">imprint</a>
             </li>
@@ -105,7 +99,7 @@ export default function Footer() {
       
 
   </div>
-  <section className='footerDescription'>
+  <section className='roboto-thin footerDescription'>
     <p>
     Learning Lions is the first step of a youth empowering program preceding
 
