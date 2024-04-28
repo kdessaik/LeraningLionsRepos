@@ -28,6 +28,11 @@ font-size: 15px;
     color: white;
    
 }
+.me-auto>a:active{
+    background-color: rgb(110,170,126);
+    color: white;
+   
+}
 .me-auto>a{
     padding-right: 15%;
 
