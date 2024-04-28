@@ -6,6 +6,10 @@ import Home from './Components/Home'
 import RootComponents from './Components/RootComponents';
 import About from './Components/About';
 import Donate from './Components/Donate';
+import WorkUs from './Components/WorkUs';
+import Volunteer from './Components/Volunteer';
+import Become from './Components/Become';
+import Contact from './Components/Contact'
 
 const router=createBrowserRouter(
   createRoutesFromElements(
@@ -13,6 +17,11 @@ const router=createBrowserRouter(
    <Route index element={<Home/>}/>
    <Route  path='/about' element ={<About/>}/>
    <Route path='/donate' element={<Donate/>}/>
+   <Route path='/Work-with-Us' element={<WorkUs/>}/>
+   <Route path='/Volunteer' element={<Volunteer/>}/>
+   <Route path='/Become-a-lion' element={<Become/>}/>
+   <Route path='/Contact' element={<Contact/>}/>
+
   </Route>
   )
   

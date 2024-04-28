@@ -1,3 +1,4 @@
+import {React,useEffect} from 'react';
 import logo from '../logo.svg';
 import '../style/css/style.css';
 import Button from 'react-bootstrap/Button'
@@ -5,6 +6,9 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 
 function App() {
+  useEffect(()=>{
+    document.title="Home - Learning Lions"
+  },[])
   return (
     <div className="App">
       <header className="App-header">

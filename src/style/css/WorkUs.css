@@ -1,16 +1,18 @@
-.aboutSection{
+.workusSection{
     width: 100%;
 }
-.bckImgAbout{
+.bckImgWorkus{
     margin-top: 4.7%;
   width: 100%;
  
   margin-left: -1%;
-  transform: scale(1.3)
+  transform: scale(1.3);
+  filter: brightness(50%);
+  
 
 }
 
-.backgroundAbout>h2{
+.backgroundWorkus>h2{
    position: absolute;
    top:40%;
    margin-left: 39%;
@@ -22,7 +24,7 @@
 
 }
 @media only screen and  (min-width: 10px) and (max-width: 900px){
-  .backgroundAbout>h2{
+  .backgroundWorkus>h2{
    
     top:20%;
     margin-left: 35%;
