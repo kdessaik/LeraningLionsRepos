@@ -28,7 +28,7 @@ font-size: 15px;
     color: white;
    
 }
-.me-auto>a:active{
+.me-auto>a:focus{
     background-color: rgb(110,170,126);
     color: white;
    
@@ -36,6 +36,11 @@ font-size: 15px;
 .me-auto>a{
     padding-right: 15%;
 
+}
+
+
+#aNavColorFocus:focus{
+    color: white;  
 }
 
 .navbar{

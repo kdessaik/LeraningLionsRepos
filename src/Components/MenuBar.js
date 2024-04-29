@@ -58,16 +58,12 @@ const [idIconUpdate,setIdIconUpdate]=useState('navlink')
             </Nav>
 
           <Nav className="font-weight-bold me-auto" id={idIconUpdate}>
-            <NavLink className="nav-link" to='/about'>ABOUT</NavLink> 
-            <NavLink to='/donate' className="nav-link" > DONATE</NavLink>
-            <NavLink className="nav-link"  to='/Work-with-Us'>WORK WITH LIONS</NavLink>
-            <NavLink className="nav-link"  to='/Volunteer'>VOLUNTEER</NavLink>
-            <NavLink className="nav-link"  to='/Become-a-lion'>BECOME A LION</NavLink>
-            <NavLink className="nav-link"  to='/Contact'>CONTACT US</NavLink>
-           
-
-
-
+            <NavLink className="nav-link" id='aNavColorFocus'  to='/about'>ABOUT</NavLink> 
+            <NavLink className="nav-link" id='aNavColorFocus' to='/donate'> DONATE</NavLink>
+            <NavLink className="nav-link" id='aNavColorFocus' to='/Work-with-Us'>WORK WITH LIONS</NavLink>
+            <NavLink className="nav-link" id='aNavColorFocus' to='/Volunteer'>VOLUNTEER</NavLink>
+            <NavLink className="nav-link" id='aNavColorFocus' to='/Become-a-lion'>BECOME A LION</NavLink>
+            <NavLink className="nav-link" id='aNavColorFocus' to='/contact-us'>CONTACT US</NavLink>
           </Nav>
           </Navbar.Collapse>
         </Container>
